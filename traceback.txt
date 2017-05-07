@@ -1,0 +1,35 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 32, in script
+    show SaberCasual01aMAIN
+  File "renpy/common/00placeholder.rpy", line 194, in _duplicate
+    rv.name = list(args.name) + list(args.args)
+AttributeError: 'NoneType' object has no attribute 'name'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 32, in script
+    show SaberCasual01aMAIN
+  File "/home/junior/Downloads/renpy-6.99.11-sdk/renpy/ast.py", line 1064, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "/home/junior/Downloads/renpy-6.99.11-sdk/renpy/ast.py", line 1036, in show_imspec
+    atl=atl)
+  File "/home/junior/Downloads/renpy-6.99.11-sdk/renpy/exports.py", line 647, in show
+    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
+  File "/home/junior/Downloads/renpy-6.99.11-sdk/renpy/display/core.py", line 962, in add
+    thing = sle.displayable._change_transform_child(thing)
+  File "/home/junior/Downloads/renpy-6.99.11-sdk/renpy/display/transform.py", line 724, in _change_transform_child
+    rv = self.copy()
+  File "/home/junior/Downloads/renpy-6.99.11-sdk/renpy/display/transform.py", line 714, in copy
+    d = self()
+  File "/home/junior/Downloads/renpy-6.99.11-sdk/renpy/display/transform.py", line 858, in __call__
+    child = child._duplicate(_args)
+  File "renpy/common/00placeholder.rpy", line 194, in _duplicate
+    rv.name = list(args.name) + list(args.args)
+AttributeError: 'NoneType' object has no attribute 'name'
+
+Linux-4.4.0-71-generic-x86_64-with-debian-stretch-sid
+Ren'Py 6.99.11.1749
+FateStayNight 1.0
