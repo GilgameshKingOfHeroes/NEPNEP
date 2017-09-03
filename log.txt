@@ -1,43 +1,44 @@
-Sat Apr 15 16:00:27 2017
-Linux-4.4.0-71-generic-x86_64-with-debian-stretch-sid
+Sat Sep  2 15:58:41 2017
+Linux-4.4.0-89-generic-x86_64-with-debian-stretch-sid
 Ren'Py 6.99.11.1749
  
 
 Bootstrap to the start of init.init took 0.06s
 Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.03s
-Loading script took 0.24s
-Loading persistent took 0.02s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.11s
+Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.07s
-Loading analysis data took 0.01s
+Running init code took 0.06s
+Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
-Dump and make backups. took 0.04s
+Backing up script files to '/home/junior/.renpy/backups/FateStayNight':
+Dump and make backups. took 0.03s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 DPI scale factor: 1.000000
-Creating interface object took 0.11s
+Creating interface object took 0.05s
 Cleaning stores took 0.00s
-Init translation took 0.04s
+Init translation took 0.03s
 Build styles took 0.00s
-Load screen analysis took 0.01s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.04s
 Prepare screens took 0.04s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
+Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.01s
+Interface start took 0.00s
 
 primary display bounds: (0, 0, 1920, 1080)
 Fullscreen mode.
 Screen sizes: virtual=(1280, 720) physical=(1920, 1080) drawable=(1920, 1080)
 Vendor: 'Intel Open Source Technology Center'
 Renderer: 'Mesa DRI Intel(R) Iris Pro 6200 (Broadwell GT3e) '
-Version: '3.0 Mesa 11.2.0'
+Version: '3.0 Mesa 17.0.7'
 Display Info: <Info({'blit_sw_CC': False, 'refresh_rate': 0, 'bitsize': 32, 'wm': True, 'losses': (0, 0, 0, 8), 'hw': False, 'masks': (16711680, 65280, 255, 0), 'current_h': 1080, 'current_w': 1920, 'shifts': (16, 8, 0, 0), 'blit_sw_A': False, 'blit_hw': False, 'blit_sw': False, 'bytesize': 4, 'blit_hw_CC': False, 'blit_hw_A': False, 'video_mem': 268435456})>
 Extensions:
     
@@ -61,10 +62,12 @@ Extensions:
     GL_ARB_clip_control
     GL_ARB_color_buffer_float
     GL_ARB_compressed_texture_pixel_storage
+    GL_ARB_compute_shader
     GL_ARB_conditional_render_inverted
     GL_ARB_conservative_depth
     GL_ARB_copy_buffer
     GL_ARB_copy_image
+    GL_ARB_cull_distance
     GL_ARB_debug_output
     GL_ARB_depth_buffer_float
     GL_ARB_depth_clamp
@@ -89,6 +92,7 @@ Extensions:
     GL_ARB_half_float_vertex
     GL_ARB_instanced_arrays
     GL_ARB_internalformat_query
+    GL_ARB_internalformat_query2
     GL_ARB_invalidate_subdata
     GL_ARB_map_buffer_alignment
     GL_ARB_map_buffer_range
@@ -103,12 +107,15 @@ Extensions:
     GL_ARB_point_sprite
     GL_ARB_program_interface_query
     GL_ARB_provoking_vertex
+    GL_ARB_query_buffer_object
+    GL_ARB_robust_buffer_access_behavior
     GL_ARB_robustness
     GL_ARB_sample_shading
     GL_ARB_sampler_objects
     GL_ARB_seamless_cube_map
     GL_ARB_seamless_cubemap_per_texture
     GL_ARB_separate_shader_objects
+    GL_ARB_shader_atomic_counter_ops
     GL_ARB_shader_atomic_counters
     GL_ARB_shader_bit_encoding
     GL_ARB_shader_clock
@@ -116,6 +123,7 @@ Extensions:
     GL_ARB_shader_image_load_store
     GL_ARB_shader_image_size
     GL_ARB_shader_objects
+    GL_ARB_shader_precision
     GL_ARB_shader_storage_buffer_object
     GL_ARB_shader_texture_image_samples
     GL_ARB_shader_texture_lod
@@ -147,6 +155,7 @@ Extensions:
     GL_ARB_texture_rectangle
     GL_ARB_texture_rg
     GL_ARB_texture_rgb10_a2ui
+    GL_ARB_texture_stencil8
     GL_ARB_texture_storage
     GL_ARB_texture_storage_multisample
     GL_ARB_texture_swizzle
@@ -237,9 +246,13 @@ Extensions:
     GL_IBM_rasterpos_clip
     GL_IBM_texture_mirrored_repeat
     GL_INGR_blend_func_separate
+    GL_KHR_blend_equation_advanced
     GL_KHR_context_flush_control
     GL_KHR_debug
+    GL_KHR_robust_buffer_access_behavior
+    GL_KHR_robustness
     GL_MESA_pack_invert
+    GL_MESA_shader_integer_functions
     GL_MESA_texture_signed_rgba
     GL_MESA_window_pos
     GL_NV_blend_square
@@ -265,18 +278,18 @@ Using shader environment.
 Using copy RTT.
 Using gl renderer.
 Texture testing:
-- Hardware max texture size: 8192
+- Hardware max texture size: 16384
 - 64px textures work.
 - 128px textures work.
 - 256px textures work.
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 0.831140995026s
+Total time until interface ready: 0.657133102417s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.017862 seconds.
-- Frame drawn at 0.022052 seconds.
-- Frame drawn at 0.037128 seconds.
-- Frame drawn at 0.053482 seconds.
-- 0.053482 seconds to render 5 frames.
+- Frame drawn at 0.005632 seconds.
+- Frame drawn at 0.017998 seconds.
+- Frame drawn at 0.033635 seconds.
+- Frame drawn at 0.051102 seconds.
+- 0.051102 seconds to render 5 frames.

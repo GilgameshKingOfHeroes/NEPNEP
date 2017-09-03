@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 46: expected statement.
-    SaberCasual10dCLOSE
-                       ^
+File "game/script.rpy", line 24: invalid syntax
+    im.=Scale("images/Minato/MinatoProfile.png", 70, 100)
+        ^
 
 Ren'Py Version: Ren'Py 6.99.11.1749
